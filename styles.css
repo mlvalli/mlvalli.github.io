@@ -269,3 +269,22 @@ summary { display: list-item; }
 @media (min-width: 64rem) {
   .service:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
 }
+
+/* Atendimento domiciliar */
+.home-visit {
+  display: grid; gap: 3rem; align-items: center;
+  border-radius: var(--radius); border: 1px solid var(--fg-10); background-color: var(--card); padding: 3rem 2rem;
+}
+.cities { border-top: 1px solid var(--fg-10); }
+.cities li {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding-block: 1.25rem; border-bottom: 1px solid var(--fg-10);
+  font-family: var(--font-display); font-size: 1.5rem; line-height: 2rem; font-weight: 300;
+}
+.cities li span {
+  font-family: var(--font-sans); font-size: 0.75rem; line-height: 1rem; font-weight: 600;
+  letter-spacing: 0.25em; color: var(--gold);
+}
+@media (min-width: 48rem) {
+  .home-visit { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 4rem 3.5rem; }
+}

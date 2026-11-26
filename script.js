@@ -25,7 +25,7 @@
   });
 
   // Faixa animada (itens duplicados para o loop contínuo)
-  var items = ["Consulta médica", "Saúde mental", "Neurodivergências", "Emagrecimento", "Laudos", "Medicina do trabalho", "Calvície", "Check-up", "Receitas digitais"];
+  var items = ["Consulta médica", "Saúde mental", "Neurodivergências", "Atendimento domiciliar", "Emagrecimento", "Laudos", "Medicina do trabalho", "Calvície", "Check-up", "Receitas digitais"];
   var marquee = document.getElementById("marquee");
   for (var k = 0; k < 2; k++) {
     items.forEach(function (t) {
