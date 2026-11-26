@@ -261,3 +261,11 @@ summary { display: list-item; }
 @media (min-width: 64rem) {
   .services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* 7 cards: o último ocupa a linha inteira para não sobrar espaço vazio */
+@media (min-width: 40rem) and (max-width: 63.99rem) {
+  .service:last-child:nth-child(2n+1) { grid-column: 1 / -1; }
+}
+@media (min-width: 64rem) {
+  .service:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
+}
